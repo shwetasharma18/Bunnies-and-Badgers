@@ -28,10 +28,6 @@ screen = pygame.display.set_mode((width, height))
 
 pygame.display.set_caption("Testing")
 
-myfont  = pygame.font.SysFont("monospace", 16)
-
-WHITE = (255,255,255)
-
 keys = [False, False, False, False, False]
 
 playerpos=[100,100]
