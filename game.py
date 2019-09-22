@@ -26,8 +26,6 @@ width, height = 640, 480
 
 screen = pygame.display.set_mode((width, height))
 
-pygame.display.set_caption("Testing")
-
 keys = [False, False, False, False, False]
 
 playerpos=[100,100]
