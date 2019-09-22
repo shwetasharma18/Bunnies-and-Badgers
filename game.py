@@ -74,11 +74,6 @@ pygame.mixer.music.play(-1, 0.0)
 
 pygame.mixer.music.set_volume(0.25)
 
-running = 1
-
-exitcode = 0
-
-score = 0
 
 def game():
 	acc = [0,0]
