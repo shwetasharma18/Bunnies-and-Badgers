@@ -97,12 +97,6 @@ def game():
 	
 	screen = pygame.display.set_mode((width, height))
 	
-	pygame.display.set_caption("Testing")
-	
-	myfont  = pygame.font.SysFont("monospace", 16)
-	
-	WHITE = (255,255,255)
-	
 	keys = [False, False, False, False, False]
 	
 	playerpos=[100,100]
@@ -149,8 +143,6 @@ def game():
 	
 	exitcode = 0
 	
-	score = 0
-	
 	while running:
 	
 		pygame.display.flip()
@@ -159,15 +151,9 @@ def game():
 	
 			if event.type == pygame.QUIT: sys.exit()
 	
-		screen.fill(WHITE)
+		screen.fill(0)
 	
-		disclaimertext = myfont.render("Some disclaimer...", 1,(0,0,0))
-		screen.blit(disclaimertext, (5,480))
 	
-		Scoretext = myfont.render("Score{0}".format(score), 1, (0,0,0))
-		screen.blit(Scoretext, (5, 10))
-		score += 1
-		
 		for x in range(width/grass.get_width()+1):
 			for y in range(height/grass.get_height()+1):
 				screen.blit(grass,(x*100,y*100))
